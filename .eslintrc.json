@@ -1,0 +1,29 @@
+{
+  "env": {
+    //js 전역 객체
+    "browser": true,
+    //nodejs 전역 객체
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended"
+  ],
+  "rules": {
+    "vue/html-closing-bracket-newline": ["error", {
+      "singleline": "never",
+      "multiline": "never"
+    }],
+    "vue/html-self-closing": ["error", {
+      "html": {
+        "void": "always",
+        "normal": "never",
+        "component": "always"
+      },
+      "svg": "always",
+      "math": "always"
+    }],
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"]
+  }
+}
